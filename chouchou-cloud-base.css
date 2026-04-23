@@ -406,7 +406,12 @@ button {
 header .header-banner-wrapper .w-block-header .w-block-background.bg-sticky {  
   box-shadow: unset !important;
   background-color: transparent !important;
-} 
+  height: unset;
+}
+
+header .header-banner-wrapper .w-block-header .w-block-background.bg-sticky .header__logo { 
+  visibility: visible !important;
+}
 
 .w-block-background { 
   background-color: transparent !important;
@@ -427,4 +432,10 @@ header .header-banner-wrapper .w-block-header .w-block-background.bg-sticky {
 .w-block-header { 
   position: absolute !important;
 }
+
+.nav--desktop .nav__main.ready { 
+  display: flex;
+  justify-content: center;
+}
+
 /*-------------- End navigation bar ---------- */
