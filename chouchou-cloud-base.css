@@ -421,7 +421,6 @@ header .header-banner-wrapper .w-block-header .w-block-background.bg-sticky .hea
 }
 
 header .header-block-wrapper .header__content-container {
-  width: 100vw !important;
   max-width: 1340px !important;
   height: 60px;
 }
