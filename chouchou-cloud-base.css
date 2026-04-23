@@ -448,8 +448,12 @@ footer .logo__link h2 {
   color: var(--surface);
 }
 
-.customer-account-icon,
-header .header-banner-wrapper .header__hamburger { 
+.customer-account-icon { 
+  display: none !important;
+}
+
+
+.header__hamburger { 
   display: none !important;
 }
 
