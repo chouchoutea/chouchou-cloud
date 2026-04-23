@@ -326,7 +326,7 @@ button {
   content: '';
   width: 0.55rem;
   height: 0.55rem;
-  background: #7ED7C1;
+  background: var(--mint-500);
   border-radius: 50%;
   display: inline-block;
 }
