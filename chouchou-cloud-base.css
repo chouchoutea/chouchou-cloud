@@ -268,12 +268,13 @@ button {
 
 /*-------------- Navigation bar ---------- */
 /* NAV CONTAINER (giống .nav của bạn) */
-.header__content-container {
+/* ===== CONTAINER (glass nav) ===== */
+.w-block-header .header__content-container {
   position: fixed;
   top: 1.25rem;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 100;
+  z-index: 999;
 
   width: calc(100% - 2rem);
   max-width: 1340px;
@@ -283,7 +284,7 @@ button {
   -webkit-backdrop-filter: blur(20px);
 
   border-radius: 999px;
-  padding: 0.7rem 1rem;
+  padding: 0.7rem 1.2rem;
 
   display: flex;
   align-items: center;
@@ -293,13 +294,13 @@ button {
   transition: all 0.3s ease;
 }
 
-/* SCROLL EFFECT */
-.header__content-container.is-scrolled {
+/* ===== SCROLL EFFECT ===== */
+.w-block-header .header__content-container.is-scrolled {
   background: rgba(249, 249, 247, 0.92);
   box-shadow: 0 12px 48px rgba(107, 90, 96, 0.12);
 }
 
-/* FLEX FIX */
+/* ===== FLEX FIX ===== */
 .header__flex {
   display: flex;
   align-items: center;
@@ -307,13 +308,16 @@ button {
   width: 100%;
 }
 
-/* LOGO */
+/* ===== LOGO ===== */
 .header__logo h2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Fraunces', serif !important;
   font-style: italic;
-  font-weight: 500;
-  font-size: 1.55rem;
+  font-weight: 500 !important;
+  font-size: 1.55rem !important;
   letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 /* DOT trước logo */
@@ -321,31 +325,56 @@ button {
   content: '';
   width: 0.55rem;
   height: 0.55rem;
-  background: #7ED7C1; /* mint */
+  background: #7ED7C1;
   border-radius: 50%;
   display: inline-block;
-  margin-right: 0.4rem;
 }
 
-/* BUTTON (Order now) */
+/* ===== MENU (quan trọng) ===== */
+.w-nav .nav__main {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+/* LINK */
+.w-nav .nav__link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+
+  color: rgba(20, 20, 20, 0.7);
+  transition: all 0.25s ease;
+}
+
+/* HOVER giống bản bạn */
+.w-nav .nav__link:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #141414;
+}
+
+/* ===== CTA BUTTON ===== */
 .w-button {
   border-radius: 999px !important;
   padding: 0.75rem 1.5rem !important;
+
   font-size: 0.85rem !important;
   font-weight: 600 !important;
 
-  background: #212121 !important;
+  background: #141414 !important;
   color: #fff !important;
 
   transition: transform 0.3s ease, background 0.25s ease;
 }
 
+/* hover scale giống bản bạn */
 .w-button:hover {
   transform: scale(1.04);
   background: #5fbfa8 !important;
 }
 
-/* ICON BUTTONS (search, cart, account) */
+/* ===== ICON BUTTON ===== */
 .nav-btn {
   border-radius: 999px;
   transition: background 0.25s ease;
@@ -355,10 +384,20 @@ button {
   background: rgba(0, 0, 0, 0.05);
 }
 
-/* MOBILE */
+/* ===== SPACING ICON ===== */
+.header__icons {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* ===== MOBILE ===== */
 @media (max-width: 860px) {
   .header__content-container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .w-nav {
+    display: none; /* giống behavior của bạn */
   }
 }
