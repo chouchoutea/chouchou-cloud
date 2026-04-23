@@ -448,8 +448,8 @@ footer .logo__link h2 {
 }
 
 .customer-account-icon,
-.nav-icon__hamburger { 
-  display: none;
+header .header-banner-wrapper .nav-icon__hamburger { 
+  display: none !important;
 }
     
 
