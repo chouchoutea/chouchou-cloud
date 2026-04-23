@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Matcha Fields Latte",
+    "description": "Stone-ground ceremonial matcha, whisked with oat milk and finished with honey boba. The Chouchou signature.",
+    "price": 6.50,
+    "priceNote": "/ medium",
+    "emoji": "🍵",
+    "tag": "★ House favourite",
+    "slug": "matcha-fields-latte"
+  },
+  {
+    "name": "Brown Sugar Pearl",
+    "description": "Warm caramel notes, creamy milk, chewy brown sugar tapioca.",
+    "price": 5.80,
+    "emoji": "🧋",
+    "tag": "Classic",
+    "slug": "brown-sugar-pearl"
+  },
+  {
+    "name": "Strawberry Sunrise",
+    "description": "Crushed strawberry, cream top.",
+    "price": 6.20,
+    "emoji": "🍓",
+    "tag": "New",
+    "slug": "strawberry-sunrise"
+  },
+  {
+    "name": "Peach Oolong",
+    "description": "Delicate oolong with fresh white peach. Floral, fruity, bright.",
+    "price": 6.00,
+    "emoji": "🍑",
+    "tag": "Seasonal",
+    "slug": "peach-oolong"
+  },
+  {
+    "name": "Oolong Cream Cloud",
+    "description": "Roasted oolong, sea-salted cream cheese foam top.",
+    "price": 5.90,
+    "emoji": "🌸",
+    "tag": "Light",
+    "slug": "oolong-cream-cloud"
+  },
+  {
+    "name": "Taro Cloud Milk",
+    "description": "Real taro purée, whole milk, velvety smooth.",
+    "price": 6.30,
+    "emoji": "💜",
+    "tag": "Creamy",
+    "slug": "taro-cloud-milk"
+  }
+]
