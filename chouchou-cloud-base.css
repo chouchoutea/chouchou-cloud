@@ -440,6 +440,11 @@ header .header-banner-wrapper .w-block-header .w-block-background.bg-sticky .hea
 
 footer .logo__link h2 { 
   font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--surface);
 }
     
 
