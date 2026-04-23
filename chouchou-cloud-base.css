@@ -401,3 +401,7 @@ button {
     display: none; /* giống behavior của bạn */
   }
 }
+
+.w-block-background { 
+  background-color: transparent !important;
+}
