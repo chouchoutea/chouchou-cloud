@@ -446,6 +446,10 @@ footer .logo__link h2 {
   margin-bottom: 1rem;
   color: var(--surface);
 }
+
+.customer-account-icon { 
+  display: none;
+}
     
 
 /*-------------- End navigation bar ---------- */
