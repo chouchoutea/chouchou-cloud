@@ -264,3 +264,101 @@ button {
     transform: rotate(10deg);
   }
 }
+
+
+/*-------------- Navigation bar ---------- */
+/* NAV CONTAINER (giống .nav của bạn) */
+.header__content-container {
+  position: fixed;
+  top: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+
+  width: calc(100% - 2rem);
+  max-width: 1340px;
+
+  background: rgba(249, 249, 247, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 8px 40px rgba(107, 90, 96, 0.06);
+  transition: all 0.3s ease;
+}
+
+/* SCROLL EFFECT */
+.header__content-container.is-scrolled {
+  background: rgba(249, 249, 247, 0.92);
+  box-shadow: 0 12px 48px rgba(107, 90, 96, 0.12);
+}
+
+/* FLEX FIX */
+.header__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* LOGO */
+.header__logo h2 {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.55rem;
+  letter-spacing: -0.03em;
+}
+
+/* DOT trước logo */
+.header__logo h2::before {
+  content: '';
+  width: 0.55rem;
+  height: 0.55rem;
+  background: #7ED7C1; /* mint */
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+
+/* BUTTON (Order now) */
+.w-button {
+  border-radius: 999px !important;
+  padding: 0.75rem 1.5rem !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+
+  background: #212121 !important;
+  color: #fff !important;
+
+  transition: transform 0.3s ease, background 0.25s ease;
+}
+
+.w-button:hover {
+  transform: scale(1.04);
+  background: #5fbfa8 !important;
+}
+
+/* ICON BUTTONS (search, cart, account) */
+.nav-btn {
+  border-radius: 999px;
+  transition: background 0.25s ease;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* MOBILE */
+@media (max-width: 860px) {
+  .header__content-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
