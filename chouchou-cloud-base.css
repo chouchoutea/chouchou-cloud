@@ -406,11 +406,11 @@ button {
   background-color: transparent !important;
 }
 
-.header-content.container {
+.header-content {
   max-width: var(--max-container) !important; 
 }
 
-.header__flex.header__condensed { 
+.header__condensed { 
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
