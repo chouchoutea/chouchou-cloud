@@ -402,12 +402,20 @@ button {
   }
 }
 
+--sticky-header-bg-color: transparent;
+
+.w-block-background.bg-sticky {  
+  box-shadow: unset;
+  background-color: transparent !important;
+} 
+
 .w-block-background { 
   background-color: transparent !important;
 }
 
 .header-content {
-  max-width: var(--max-container) !important; 
+  width: calc(100% - 2rem) !important;
+  max-width: 1340px !important;
 }
 
 .header__condensed { 
@@ -415,5 +423,7 @@ button {
   margin-bottom: 0 !important;
 }
 
-
+.w-block-header { 
+  position: absolute !important;
+}
 /*-------------- End navigation bar ---------- */
