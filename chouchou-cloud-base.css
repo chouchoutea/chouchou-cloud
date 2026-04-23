@@ -402,7 +402,6 @@ button {
   }
 }
 
---sticky-header-bg-color: transparent;
 
 .bg-sticky {  
   box-shadow: unset !important;
@@ -411,6 +410,7 @@ button {
 
 .w-block-background { 
   background-color: transparent !important;
+  box-shadow: unset !important;
 }
 
 .header-content,
