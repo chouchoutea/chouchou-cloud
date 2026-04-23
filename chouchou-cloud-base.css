@@ -438,4 +438,9 @@ header .header-banner-wrapper .w-block-header .w-block-background.bg-sticky .hea
   justify-content: center;
 }
 
+footer .logo__link h2 { 
+  font-family: 'Fraunces', serif;
+}
+    
+
 /*-------------- End navigation bar ---------- */
