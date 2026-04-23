@@ -405,3 +405,15 @@ button {
 .w-block-background { 
   background-color: transparent !important;
 }
+
+.header-content.container {
+  max-width: var(--max-container) !important; 
+}
+
+.header__flex.header__condensed { 
+  margin-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+
+/*-------------- End navigation bar ---------- */
