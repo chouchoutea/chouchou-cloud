@@ -404,7 +404,7 @@ button {
 
 --sticky-header-bg-color: transparent;
 
-.w-block-background.bg-sticky {  
+.bg-sticky {  
   box-shadow: unset;
   background-color: transparent !important;
 } 
