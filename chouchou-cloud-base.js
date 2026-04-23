@@ -1,3 +1,8 @@
-// Initial JavaScript content for chouchou-cloud-base.js
-
-console.log('Hello, Chouchou Cloud!');
+document.addEventListener('DOMContentLoaded', function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { els.forEach(function(e){e.classList.add('is-visible');}); return; }
+      var obs = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){ if(entry.isIntersecting){ entry.target.classList.add('is-visible'); obs.unobserve(entry.target); } });
+      },{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+      els.forEach(function(el){ obs.observe(el); });
+    });
