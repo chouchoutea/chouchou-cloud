@@ -427,6 +427,7 @@ header .header-banner-wrapper .w-block-header .w-block-background.bg-sticky .hea
 .header__condensed { 
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+  padding: 0;
 }
 
 .w-block-header { 
@@ -448,9 +449,12 @@ footer .logo__link h2 {
 }
 
 .customer-account-icon,
-header .header-banner-wrapper .nav-icon__hamburger { 
+header .header-banner-wrapper .header__hamburger { 
   display: none !important;
 }
-    
+
+.header__flex {
+  padding: 0 !important;
+}
 
 /*-------------- End navigation bar ---------- */
