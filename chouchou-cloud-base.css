@@ -405,7 +405,7 @@ button {
 --sticky-header-bg-color: transparent;
 
 .bg-sticky {  
-  box-shadow: unset;
+  box-shadow: unset !important;
   background-color: transparent !important;
 } 
 
@@ -413,7 +413,8 @@ button {
   background-color: transparent !important;
 }
 
-.header-content {
+.header-content,
+.header__content-container {
   width: calc(100% - 2rem) !important;
   max-width: 1340px !important;
 }
