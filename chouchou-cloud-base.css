@@ -447,7 +447,8 @@ footer .logo__link h2 {
   color: var(--surface);
 }
 
-.customer-account-icon { 
+.customer-account-icon,
+.nav-icon__hamburger { 
   display: none;
 }
     
