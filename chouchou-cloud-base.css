@@ -403,7 +403,7 @@ button {
 }
 
 
-.bg-sticky {  
+header .header-banner-wrapper .w-block-header .w-block-background.bg-sticky {  
   box-shadow: unset !important;
   background-color: transparent !important;
 } 
