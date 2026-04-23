@@ -407,6 +407,7 @@ header .header-banner-wrapper .w-block-header .w-block-background.bg-sticky {
   box-shadow: unset !important;
   background-color: transparent !important;
   height: unset;
+  transition: all .3s var(--ease-out);
 }
 
 header .header-banner-wrapper .w-block-header .w-block-background.bg-sticky .header__logo { 
