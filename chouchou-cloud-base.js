@@ -7,29 +7,27 @@ document.addEventListener('DOMContentLoaded', function () {
       els.forEach(function(el){ obs.observe(el); });
     });
 
-// URL Route Checker
-// Checks if current page is homepage (/) or order page (contains /s/order)
-
-function checkCurrentRoute() {
+(function () {
   const pathname = window.location.pathname;
-  
-  const isHomepage = pathname === '/';
-  const isOrderPage = pathname.includes('/s/order');
+  const CSS_BASE = 'https://chouchoutea.github.io/chouchou-cloud/';
 
-  return {
-    isHomepage,
-    isOrderPage,
-    currentPath: pathname
+  const cssMap = {
+    //'/': 'chouchou-cloud-home.css',       // homepage CSS (if you have one)
+    '/s/order': 'chouchou-cloud-order.css' // order page CSS
   };
-}
 
-// Usage
-const route = checkCurrentRoute();
+  for (const [route, file] of Object.entries(cssMap)) {
+    const matches = route === '/' 
+      ? pathname === '/' 
+      : pathname.includes(route);
 
-if (route.isHomepage) {
-  console.log('✅ You are on the Homepage (/)');
-} else if (route.isOrderPage) {
-  console.log('✅ You are on an Order page (/s/order...)');
-} else {
-  console.log(`❌ Unknown page: ${route.currentPath}`);
-}
+    if (matches) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = CSS_BASE + file;
+      document.head.appendChild(link);
+      console.log(`✅ Loaded CSS: ${file}`);
+      break;
+    }
+  }
+})();
