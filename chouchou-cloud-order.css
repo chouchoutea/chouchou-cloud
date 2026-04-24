@@ -3,6 +3,11 @@
  padding-bottom: 120px !important;
 }
 
-.available__dropdown {
+.available__dropdown, 
+available-timeframe__wrapper, {
   display: none !important;
+}
+
+.category-title .text-component {  
+  font-size: 40px;
 }
