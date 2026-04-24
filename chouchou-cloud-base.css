@@ -480,6 +480,10 @@ footer .logo__link h2 {
 .d-flex { 
   display: flex !important;
 }
+
+.d-none { 
+  display: none !important;
+}
   
 /* .site-wide-fulfillment__inline { 
   display: none !important;
