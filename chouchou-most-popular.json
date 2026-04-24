@@ -2,7 +2,7 @@
   {
     "name": "Milky Fresh Taro",
     "description": "Fresh taro blended with creamy milk, naturally sweet and velvety smooth.",
-    "price": 6.30,
+    "price": 6.95,
     "image": "https://chouchoutea.github.io/chouchou-cloud/images/milky-fresh-taro.png",
     "tag": "Creamy",
     "slug": "milky-fresh-taro"
@@ -10,7 +10,7 @@
   {
     "name": "Roasted Oolong Milk Tea",
     "description": "Deep roasted oolong infused with silky milk, rich aroma with a toasty finish.",
-    "price": 5.90,
+    "price": 6.50,
     "image": "https://chouchoutea.github.io/chouchou-cloud/images/roasted-oolong-milk-tea.png",
     "tag": "Classic",
     "slug": "roasted-oolong-milk-tea"
@@ -18,7 +18,7 @@
   {
     "name": "Strawberry Blush",
     "description": "Fresh strawberry purée with light cream foam, fruity and refreshing.",
-    "price": 6.20,
+    "price": 6.95,
     "image": "https://chouchoutea.github.io/chouchou-cloud/images/strawberry-blush.png",
     "tag": "New",
     "slug": "strawberry-blush"
@@ -26,7 +26,7 @@
   {
     "name": "Choco Banana Brûlée Frost",
     "description": "Chocolate and ripe banana blended with milk, topped with brûlée cream frost.",
-    "price": 6.50,
+    "price": 7.50,
     "image": "https://chouchoutea.github.io/chouchou-cloud/images/choco-banana-brulee-frost.png",
     "tag": "★ Signature",
     "slug": "choco-banana-brulee-frost"
@@ -34,7 +34,7 @@
   {
     "name": "Crème Brûlée Coffee",
     "description": "Bold coffee layered with caramelized brûlée cream, rich and indulgent.",
-    "price": 6.40,
+    "price": 6.50,
     "image": "https://chouchoutea.github.io/chouchou-cloud/images/creme-brulee-coffee.png",
     "tag": "Best Seller",
     "slug": "creme-brulee-coffee"
@@ -42,7 +42,7 @@
   {
     "name": "Jasmine Matcha Cloud",
     "description": "Aromatic jasmine tea layered with smooth matcha cream cloud, light and floral.",
-    "price": 6.60,
+    "price": 7.50,
     "image": "https://chouchoutea.github.io/chouchou-cloud/images/jasmine-matcha-cloud.png",
     "tag": "Premium",
     "slug": "jasmine-matcha-cloud"
