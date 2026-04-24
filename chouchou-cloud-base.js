@@ -11,23 +11,32 @@ document.addEventListener('DOMContentLoaded', function () {
   const pathname = window.location.pathname;
   const CSS_BASE = 'https://chouchoutea.github.io/chouchou-cloud/';
 
-  const cssMap = {
-    //'/': 'chouchou-cloud-home.css',       // homepage CSS (if you have one)
-    '/s/order': 'chouchou-cloud-order.css' // order page CSS
-  };
-
-  for (const [route, file] of Object.entries(cssMap)) {
-    const matches = route === '/' 
-      ? pathname === '/' 
-      : pathname.includes(route);
-
-    if (matches) {
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = CSS_BASE + file;
-      document.head.appendChild(link);
-      console.log(`✅ Loaded CSS: ${file}`);
-      break;
+  const cssMap = [
+    // {
+    //   name: 'homepage',
+    //   match: function (p) { return p === '/'; },
+    //   file: 'chouchou-cloud-home.css'
+    // },
+    {
+      name: 'order',
+      match: function (p) { return p.includes('/s/order'); },
+      file: 'chouchou-cloud-order.css'
     }
-  }
+  ];
+
+  cssMap.forEach(function (route) {
+    if (route.match(pathname)) {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = CSS_BASE + route.file;
+      link.onload = function () {
+        console.log('✅ [ChouchouCloud] Loaded CSS for ' + route.name + ': ' + route.file);
+      };
+      link.onerror = function () {
+        console.warn('❌ [ChouchouCloud] Failed to load CSS: ' + route.file);
+      };
+      document.head.appendChild(link);
+    }
+  });
 })();
