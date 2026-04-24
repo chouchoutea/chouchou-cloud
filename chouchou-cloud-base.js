@@ -28,11 +28,13 @@ const route = checkCurrentRoute();
 
 if (route.isHomepage) {
   console.log('✅ You are on the Homepage (/)');
+  document.querySelector('.site-wide-fulfillment__inline').classList.add('d-none');
 } else if (route.isOrderPage) {     
   document.querySelector('.site-wide-fulfillment__inline').classList.add('d-flex');
   console.log('✅ You are on an Order page (/s/order...)');
 } else {
   console.log(`❌ Unknown page: ${route.currentPath}`);
+  document.querySelector('.site-wide-fulfillment__inline').classList.add('d-none');
 }
     });
 
