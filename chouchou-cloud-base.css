@@ -477,4 +477,8 @@ footer .logo__link h2 {
   color: black !important;
 }
 
+.site-wide-fulfillment__inline { 
+  display: none;
+}
+
 /*-------------- End navigation bar ---------- */
