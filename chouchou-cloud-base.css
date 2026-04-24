@@ -478,7 +478,7 @@ footer .logo__link h2 {
 }
 
 .site-wide-fulfillment__inline { 
-  display: none;
+  display: none !important;
 }
 
 /*-------------- End navigation bar ---------- */
