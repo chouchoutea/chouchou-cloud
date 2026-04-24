@@ -409,6 +409,7 @@ header .header-banner-wrapper .w-block-header .w-block-background.bg-sticky {
   background-color: transparent !important;
   height: unset;
   transition: all .3s var(--ease-out);
+  top: 0 !important;
 }
 
 header .header-banner-wrapper .w-block-header .w-block-background.bg-sticky .header__logo { 
