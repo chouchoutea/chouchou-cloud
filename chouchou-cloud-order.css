@@ -2,3 +2,7 @@
  padding-top: 120px !important;
  padding-bottom: 120px !important;
 }
+
+.available__dropdown {
+  display: none !important;
+}
