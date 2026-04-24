@@ -1,56 +1,50 @@
 [
   {
-    "name": "Matcha Fields Latte",
-    "description": "Stone-ground ceremonial matcha, whisked with oat milk and finished with honey boba. The Chouchou signature.",
-    "price": 6.50,
-    "priceNote": "/ medium",
-    "image": "https://chouchoutea.github.io/chouchou-cloud/images/matcha-fields-latte.png",
-    "tag": "★ House favourite",
-    "slug": "matcha-fields-latte"
-  },
-  {
-    "name": "Brown Sugar Pearl",
-    "description": "Warm caramel notes, creamy milk, chewy brown sugar tapioca.",
-    "price": 5.80,
-    "priceNote": "",
-    "image": "https://chouchoutea.github.io/chouchou-cloud/images/brown-sugar-pearl.png",
-    "tag": "Classic",
-    "slug": "brown-sugar-pearl"
-  },
-  {
-    "name": "Strawberry Sunrise",
-    "description": "Crushed strawberry, cream top.",
-    "price": 6.20,
-    "priceNote": "",
-    "image": "https://chouchoutea.github.io/chouchou-cloud/images/strawberry-sunrise.png",
-    "tag": "New",
-    "slug": "strawberry-sunrise"
-  },
-  {
-    "name": "Peach Oolong",
-    "description": "Delicate oolong with fresh white peach. Floral, fruity, bright.",
-    "price": 6.00,
-    "priceNote": "",
-    "image": "https://chouchoutea.github.io/chouchou-cloud/images/peach-oolong.png",
-    "tag": "Seasonal",
-    "slug": "peach-oolong"
-  },
-  {
-    "name": "Oolong Cream Cloud",
-    "description": "Roasted oolong, sea-salted cream cheese foam top.",
-    "price": 5.90,
-    "priceNote": "",
-    "image": "https://chouchoutea.github.io/chouchou-cloud/images/oolong-cream-cloud.png",
-    "tag": "Light",
-    "slug": "oolong-cream-cloud"
-  },
-  {
-    "name": "Taro Cloud Milk",
-    "description": "Real taro purée, whole milk, velvety smooth.",
+    "name": "Milky Fresh Taro",
+    "description": "Fresh taro blended with creamy milk, naturally sweet and velvety smooth.",
     "price": 6.30,
-    "priceNote": "",
-    "image": "https://chouchoutea.github.io/chouchou-cloud/images/taro-cloud-milk.png",
+    "image": "https://chouchoutea.github.io/chouchou-cloud/images/milky-fresh-taro.png",
     "tag": "Creamy",
-    "slug": "taro-cloud-milk"
+    "slug": "milky-fresh-taro"
+  },
+  {
+    "name": "Roasted Oolong Milk Tea",
+    "description": "Deep roasted oolong infused with silky milk, rich aroma with a toasty finish.",
+    "price": 5.90,
+    "image": "https://chouchoutea.github.io/chouchou-cloud/images/roasted-oolong-milk-tea.png",
+    "tag": "Classic",
+    "slug": "roasted-oolong-milk-tea"
+  },
+  {
+    "name": "Strawberry Blush",
+    "description": "Fresh strawberry purée with light cream foam, fruity and refreshing.",
+    "price": 6.20,
+    "image": "https://chouchoutea.github.io/chouchou-cloud/images/strawberry-blush.png",
+    "tag": "New",
+    "slug": "strawberry-blush"
+  },
+  {
+    "name": "Choco Banana Brûlée Frost",
+    "description": "Chocolate and ripe banana blended with milk, topped with brûlée cream frost.",
+    "price": 6.50,
+    "image": "https://chouchoutea.github.io/chouchou-cloud/images/choco-banana-brulee-frost.png",
+    "tag": "★ Signature",
+    "slug": "choco-banana-brulee-frost"
+  },
+  {
+    "name": "Crème Brûlée Coffee",
+    "description": "Bold coffee layered with caramelized brûlée cream, rich and indulgent.",
+    "price": 6.40,
+    "image": "https://chouchoutea.github.io/chouchou-cloud/images/creme-brulee-coffee.png",
+    "tag": "Best Seller",
+    "slug": "creme-brulee-coffee"
+  },
+  {
+    "name": "Jasmine Matcha Cloud",
+    "description": "Aromatic jasmine tea layered with smooth matcha cream cloud, light and floral.",
+    "price": 6.60,
+    "image": "https://chouchoutea.github.io/chouchou-cloud/images/jasmine-matcha-cloud.png",
+    "tag": "Premium",
+    "slug": "jasmine-matcha-cloud"
   }
 ]
