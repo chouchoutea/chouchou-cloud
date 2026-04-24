@@ -11,3 +11,8 @@
 .category-title .text-component {  
   font-size: 40px !important;
 }
+
+.site-wide-fulfillment__inline { 
+ display: flex !important;
+ margin-top: 120px;
+}
