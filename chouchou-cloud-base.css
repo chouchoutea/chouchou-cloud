@@ -272,11 +272,11 @@ button {
 .w-block-header .header__content-container {
   position: fixed;
   top: 1.25rem;
-  left: 50%;
+  left: 52%;
   transform: translateX(-50%);
   z-index: 999;
 
-  width: calc(100% - 2rem);
+  width: calc(100% - 1rem);
   max-width: 1340px;
 
   background: rgba(249, 249, 247, 0.72);
