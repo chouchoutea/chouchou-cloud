@@ -1,3 +1,9 @@
 h2 { 
  color: red;
 }
+
+
+.content-align--center {
+ padding-top: 120px !important;
+ padding-bottom: 120px !important;
+}
