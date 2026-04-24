@@ -463,4 +463,8 @@ footer .logo__link h2 {
   padding: 0 !important;
 }
 
+.w-nav .nav__link:hover { 
+  background-color: transparent !important;
+}
+
 /*-------------- End navigation bar ---------- */
