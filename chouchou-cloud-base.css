@@ -473,7 +473,8 @@ footer .logo__link h2 {
 }
 
 .header__icons a[type="button"]:hover {  
- background-color: var(--mint-200) !important;
+  background-color: var(--mint-300) !important;
+  color: black !important;
 }
 
 /*-------------- End navigation bar ---------- */
