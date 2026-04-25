@@ -55,45 +55,78 @@ function checkCurrentRoute() {
     currentPath: pathname
   };
 }
-
-
 // ─── Fulfillment Banner Visibility ──────────────────────────────────────────
-// Waits for ".site-wide-fulfillment__inline" to appear in the DOM,
-// then shows or hides it based on the current route.
-// Retries every 500ms and gives up after 10 seconds if element is not found.
-window.onload = function () {
-  var route    = checkCurrentRoute();
-  var selector = '.site-wide-fulfillment__inline';
-  var elapsed  = 0;
-  var interval = 500;   // retry every 500ms
-  var maxWait  = 10000; // timeout after 10 seconds
+// Square Online is a SPA — pages change without full reload.
+// We listen to URL changes via popstate and pushState override,
+// then wait for the element to appear (retry every 500ms, timeout 10s).
 
-  var timer = setInterval(function () {
-    var el = document.querySelector(selector);
-    elapsed += interval;
+(function () {
 
-    if (el) {
-      // Element found — apply class based on current route
-      clearInterval(timer);
+  // ─── Core logic: check route and apply class to banner element ────────────
+  function applyFulfillmentVisibility() {
+    var route    = checkCurrentRoute();
+    var selector = '.site-wide-fulfillment__inline';
+    var elapsed  = 0;
+    var interval = 500;   // retry every 500ms
+    var maxWait  = 10000; // give up after 10s
 
-      if (route.isHomepage) {
-        console.log('✅ Homepage — adding d-none');
-        el.classList.add('d-none');
-
-      } else if (route.isOrderPage) {
-        console.log('✅ Order page — adding d-flex');
-        el.classList.add('d-flex');
-
-      } else {
-        console.log('❌ Unknown page: ' + route.currentPath + ' — adding d-none');
-        el.classList.add('d-none');
-      }
-
-    } else if (elapsed >= maxWait) {
-      // Element never appeared — stop retrying
-      clearInterval(timer);
-      console.warn('⏱ Timeout: "' + selector + '" not found after 10s');
+    // Reset previous classes before applying new ones
+    var existing = document.querySelector(selector);
+    if (existing) {
+      existing.classList.remove('d-none', 'd-flex');
     }
 
-  }, interval);
-};
+    var timer = setInterval(function () {
+      var el = document.querySelector(selector);
+      elapsed += interval;
+
+      if (el) {
+        clearInterval(timer);
+        el.classList.remove('d-none', 'd-flex'); // clean slate
+
+        if (route.isHomepage) {
+          console.log('✅ Homepage — adding d-none');
+          el.classList.add('d-none');
+
+        } else if (route.isOrderPage) {
+          console.log('✅ Order page — adding d-flex');
+          el.classList.add('d-flex');
+
+        } else {
+          console.log('❌ Unknown page: ' + route.currentPath + ' — adding d-none');
+          el.classList.add('d-none');
+        }
+
+      } else if (elapsed >= maxWait) {
+        clearInterval(timer);
+        console.warn('⏱ Timeout: "' + selector + '" not found after 10s');
+      }
+
+    }, interval);
+  }
+
+
+  // ─── Intercept pushState (SPA navigation) ────────────────────────────────
+  // Square uses history.pushState to navigate — override it to detect changes
+  var _originalPushState = history.pushState;
+  history.pushState = function () {
+    _originalPushState.apply(history, arguments);
+    console.log('🔀 pushState detected:', window.location.pathname);
+    applyFulfillmentVisibility();
+  };
+
+
+  // ─── Listen to popstate (back/forward browser buttons) ───────────────────
+  window.addEventListener('popstate', function () {
+    console.log('🔀 popstate detected:', window.location.pathname);
+    applyFulfillmentVisibility();
+  });
+
+
+  // ─── Run once on initial page load ───────────────────────────────────────
+  window.addEventListener('load', function () {
+    console.log('🚀 Initial load:', window.location.pathname);
+    applyFulfillmentVisibility();
+  });
+
+})();
