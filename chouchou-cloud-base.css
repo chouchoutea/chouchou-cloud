@@ -433,7 +433,7 @@ header .header-block-wrapper .header__content-container {
   height: unset !important;
 }
 
-.w-block-header { 
+.header-banner-wrapper .header-block-wrapper { 
   position: absolute !important;
 }
 
